@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="<a href="http://www.w3.org/2001/XMLSchema-instance%22" rel="nofollow"><u>http://www.w3.org/2001/XMLSchema-instance"</u></a>
+         xmlns="<a href="http://maven.apache.org/POM/4.0.0%22" rel="nofollow"><u>http://maven.apache.org/POM/4.0.0"</u></a>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 <a href="http://maven.apache.org/xsd/maven-4.0.0.xsd%22>" rel="nofollow"><u>http://maven.apache.org/xsd/maven-4.0.0.xsd"></u></a>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sopromadze</groupId>
@@ -32,15 +32,15 @@
         </dependency>
 
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
+    		<groupId>org.postgresql</groupId>
+    		<artifactId>postgresql</artifactId>
+    		<version>42.2.15</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.12</version>
+			<version>1.18.20</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -138,7 +138,8 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 		</dependency>
-
+	
+		
 	</dependencies>
 
 	<build>
@@ -157,6 +158,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			
 		</plugins>
 	</build>
 </project>
